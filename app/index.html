@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Weather Map App</title>
+    <link rel="stylesheet" type="text/css" href="wm_app.css" />
 </head>
-<body>
-    <a href="#/cities/New_York"> New York</a>
-    <a href="#/cities/Chicago"> Chicago </a>
-    <a href="#/cities/New Jersey"> New Jersey </a>
-    <a href="#/cities/San Diego"> San Diego </a>
-    <a href="#/cities/Pune"> Pune </a>
-    <a href="#/cities/Mumbai"> Mumbai </a>
-
+<body ng-class="{loading: isLoading}">
+    <nav class="view-nav">
+        <a href="#/cities/New York">New York</a>
+        <a href="#/cities/Pune">Pune</a>
+        <a href="#/cities/Chicago">Chicago</a>
+        <a href="#/cities/New Jersey">New Jersey</a>
+    </nav>
     <div ng-view></div>
     <script type="text/javascript" src="/bower_components/angular/angular.js"></script>
     <script type="text/javascript" src="/bower_components/angular-route/angular-route.js"></script>
